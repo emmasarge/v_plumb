@@ -43,6 +43,7 @@ export const Products = () => {
         if (isBestSeller || isRecommended) {
           return true;
         }
+        return false;
       })
       .filter((product: ProductList) => {
         const productPrice = product.price.priceIncTax;
