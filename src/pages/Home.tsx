@@ -2,7 +2,8 @@ import React from 'react';
 import { useApiData } from '../hooks/ProductApi';
 
 export const Home = () => {
-  const apiKey = process.env.REACT_APP_API_KEY ||"";
+  const apiKey = process.env.REACT_APP_API_KEY as string;
+  console.log(apiKey);
   const apiURL = 'https://spanishinquisition.victorianplumbing.co.uk/interviews/listings';
   const requestPayload = {
     query: 'toilets',
