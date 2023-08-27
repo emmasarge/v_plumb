@@ -2,9 +2,9 @@ import { useState, useEffect } from 'react';
 import { PaginatedProducts, ProductFacets, ProductList } from '../interfaces/ProductInterface';
 
 interface ApiResponse {
-  pagination: PaginatedProducts[]
-  facets: ProductFacets[]; 
-  products: ProductList[]
+  pagination: PaginatedProducts[];
+  facets: ProductFacets[];
+  products: ProductList[];
 }
 
 interface ErrorData {
@@ -14,19 +14,28 @@ interface ErrorData {
 interface UseApiDataProps {
   apiURL: string;
   apiKey: string;
-  requestPayload: Record<string, any>; // Adjust the payload type accordingly
+  requestPayload: Record<string, any>;
 }
 
-interface UseApiDataResult {
-  data: ApiResponse | null;
-  loading: boolean;
-  error: ErrorData | null;
-}
-
-export function useApiData({ apiURL, apiKey, requestPayload }: UseApiDataProps): UseApiDataResult {
+export function usePaginatedProducts({
+  apiURL,
+  apiKey,
+  requestPayload
+}: UseApiDataProps, pageSize: number) {
   const [data, setData] = useState<ApiResponse | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<ErrorData | null>(null);
+  const [pageNumber, setPageNumber] = useState<number>(0);
+
+  const nextPage = () => {
+    setPageNumber(prevPageNumber => prevPageNumber + 1);
+  };
+
+  const prevPage = () => {
+    if (pageNumber > 0) {
+      setPageNumber(prevPageNumber => prevPageNumber - 1);
+    }
+  };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -36,7 +45,11 @@ export function useApiData({ apiURL, apiKey, requestPayload }: UseApiDataProps):
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify(requestPayload),
+          body: JSON.stringify({
+            ...requestPayload,
+            pageNumber,
+            size: pageSize,
+          }),
         });
 
         if (!response.ok) {
@@ -57,7 +70,7 @@ export function useApiData({ apiURL, apiKey, requestPayload }: UseApiDataProps):
     };
 
     fetchData();
-  }, [apiURL, apiKey, requestPayload]);
+  }, [apiURL, apiKey, requestPayload, pageNumber, pageSize]);
 
-  return { data, loading, error };
+  return { data, nextPage, prevPage, loading, error, pageNumber };
 }
