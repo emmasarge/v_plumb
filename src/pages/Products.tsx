@@ -69,7 +69,8 @@ export const Products = () => {
         return productPrice > 450;
       }
       return true;
-    });
+    }
+    );
   }
   useEffect(() => {
     if (data && data.pagination) {

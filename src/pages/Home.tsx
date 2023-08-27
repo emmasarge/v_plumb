@@ -54,6 +54,7 @@ export const Home = () => {
       if (isBestSeller || isRecommended) {
         return true;
       }
+      return false; 
     })
     .filter((product: ProductList) => {
       const productPrice = product.price.priceIncTax;
