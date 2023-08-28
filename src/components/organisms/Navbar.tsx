@@ -23,7 +23,7 @@ export const Navbar = () => {
             Products
           </Link>
         </div>
-        <div onClick={handleMenu} className="flex w-8 z-40 lg:hidden">
+        <div onClick={handleMenu} className="flex w-8  z-[999] lg:hidden">
           <BurgerMenu />
         </div>
         {menuOpen && (
