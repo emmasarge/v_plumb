@@ -38,18 +38,18 @@ export const ProductsOrganism = (props: ProductProps) => {
             <div className="lg:mt-6 pb-4 flex w-full sm:w-11/12 h-full justify-between md:items-start flex-col">
             <div className="flex w-11/12 h-11/12 mt-3 md:mt-0 mx-auto md:w-10/12 md:max-w-[800px]  justify-between  items-stretch flex-col">
              <div className="lg:pb-6 ">
-              <h1 className="text-[1.45em] md:text-[1.75em] lg:text-[2.25em] mt-3 leading-[1.125em]  font-[500] tracking-wide" >{props.product_name}</h1>
+              <h1 className="text-[1.35em] md:text-[1.75em] lg:text-[2.25em] mt-3 leading-[1.125em]  font-[500] tracking-wide" >{props.product_name}</h1>
               <div>
                <p className="mt-3 mb-2 w-11/12 text-[1em] md:text-[1.2em]">Average customer rating: {""}</p> 
                 {props.average_rating < 1 || props.average_rating === undefined
                   ? <p>"Not rated yet"</p>
-                  : <RatingStars height="h-[1.35em]" rating={props.average_rating}/>}
+                  : <RatingStars height="h-[1.25em]"  rating={props.average_rating}/>}
               </div>
               <p className="mt-8 text-[1.125em] md:text-[1.25em] leading-[1.2em]  font-[400]">Price: £{props.product_price}</p>
 
               </div>
               <div className="mt-10 lg:mt-12 flex w-full">
-                <button onClick={props.handleAddToCart} className="border text-[1.125em] lg:text-[1.25em] border-black tracking-wide hover:bg-black transition duration-300 hover:duration-300 hover:text-white  py-3.5 w-full md:w-8/12">Add to cart</button>
+                <button onClick={props.handleAddToCart} className="border text-[1em] sm:text-[1.125em] lg:text-[1.25em] border-black tracking-wide hover:bg-black transition duration-300 hover:duration-300 hover:text-white py-2  sm:py-3.5 w-full md:w-8/12">Add to cart</button>
                 </div>
             </div>
             </div>

@@ -81,7 +81,7 @@ export const Home = () => {
       <div className="bg-hero-image bg-blend-multiply bg-slate-400 bg-cover w-full justify-center items-end h-[80vh] md:h-[90vh] flex pb-4">
         <div className="w-11/12 flex pb-8">
           <div className="w-full md:w-9/12 flex flex-col pb-16">
-            <h1 className="text-white font-[600] leading-[1.125em] tracking-wide text-[2.125em] sm:text-[2.75em] lg:text-[4em]">
+            <h1 className=" text-white font-[600] leading-[1.125em] tracking-wide text-[2.125em] sm:text-[2.75em] lg:text-[4em]">
               Our biggest collection of toilets is here.
             </h1>
             <h2 className=" sm:w-11/12 text-white mt-1 text-[1.65em] sm:text-[2.125em] tracking-wide  lg:text-[3em] leading-[1.124em]">
@@ -101,10 +101,10 @@ export const Home = () => {
       <div className="w-full flex flex-col">
         <div className="w-full flex flex-col">
           <div className="w-11/12  mx-auto mt-8">
-            <h1 className=" text-[1.75em] sm:text-[2.4em] font-[500] leading-[1.2em]">
+            <h1 className=" tracking-wide text-[1.5em] sm:text-[2.4em] font-[500] leading-[1.2em]">
               Perfect plumbing for your bathroom.
             </h1>
-            <h2 className="text-[1.6em] mt-1.5 sm:text-[2em] font-[400] leading-[1.2em] mb-10">
+            <h2 className="tracking-wide text-[1.35em] mt-1.5 sm:text-[2em] font-[400] leading-[1.2em] mb-10">
               Our newest range of toilets and baths
             </h2>
           </div>
@@ -155,7 +155,7 @@ export const Home = () => {
           </div>
           <div className="w-10/12 mx-auto sm:mt-10 md:mt-20 ">
             <div>
-              <h1 className=" text-[1.25em] tracking-wide mb-4 md:mb-10 sm:text-[1.5em] font-[500] leading-[1.2em]">
+            <h1 className="tracking-wide text-[1.25em] sm:text-[1.55em] lg:text-[1.9em] font-[400] leading-[1.2em] mb-6 md:mb-12">
                 Our highest rated toilets
               </h1>
             </div>

@@ -81,9 +81,9 @@ export const Products = () => {
 
   return (
     <div className="w-full flex flex-col flex-wrap justify-center  pt-28 pb-32">
-      <div className="w-11/12  pb-10 mx-auto pt-20">
-        <div className="pb-7">
-          <h1 className="text-[2.4em] mb-8 font-[500] leading-[1.2em]">
+      <div className="w-11/12  pb-10 mx-auto pt-0 sm:pt-20">
+        <div className="pb-2 sm:pb-7">
+          <h1 className="text-[1.85em] sm:text-[2.4em] mb-8 font-[500] leading-[1.2em]">
             Our products.
           </h1>
         </div>
@@ -119,18 +119,18 @@ export const Products = () => {
           </div>
         </div>
       </div>
-      <div className="flex pb-20 pt-10 flex-row mx-auto items-center justify-around w-11/12 max-w-[900px]">
+      <div className="flex pb-20 sm:pt-10 flex-row mx-auto items-center justify-around w-11/12 max-w-[900px]">
         <button
-          className="hover:bg-[#71c16a] text-[1.125em] leading-[1.125em] hover:text-white font-[500]  flex w-1/2 md:w-full max-w-[200px] justify-center uppercase rounded-full px-5 py-1.5 border border-[#71c16a] bg-transparent text-[#71c16a] transition duration-300 hover:duration-300"
+          className="hover:bg-[#71c16a] text-[0.8em] sm:text-[1.125em] leading-[1.125em] hover:text-white font-[500]  flex w-1/2 md:w-full max-w-[200px] justify-center uppercase rounded-full px-5 py-1.5 border border-[#71c16a] bg-transparent text-[#71c16a] transition duration-300 hover:duration-300"
           onClick={prevPage}
         >
           Previous Page
         </button>
         <div>
-          <p className="text-[#71c16a] font-[500] px-5">{currentPage} / {100}</p>
+          <p className="text-[#71c16a] text-[0.8em] sm:text-[1.125em] font-[500] px-5">{currentPage} / {100}</p>
         </div>
         <button
-          className="hover:bg-[#71c16a] text-[1.125em] leading-[1.125em] hover:text-white font-[500] w-1/2  flex md:w-full max-w-[200px] justify-center uppercase rounded-full px-5 py-1.5 border border-[#71c16a] bg-transparent text-[#71c16a] transition duration-300 hover:duration-300"
+          className="hover:bg-[#71c16a] text-[0.8em] sm:text-[1.125em] leading-[1.125em] hover:text-white font-[500] w-1/2  flex md:w-full max-w-[200px] justify-center uppercase rounded-full px-5 py-1.5 border border-[#71c16a] bg-transparent text-[#71c16a] transition duration-300 hover:duration-300"
           onClick={nextPage}
         >
           Next Page

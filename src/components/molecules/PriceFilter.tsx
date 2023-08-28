@@ -12,7 +12,7 @@ export const PriceFilter: React.FC<PriceFilterProps> = ({ selectedRange, onChang
 
     return (
         <div className="text-[0.85em] leading-[1.2em] sm:text-[1em] radio-container h-full border-[1.5px] border-[#71c16a] p-1.5 sm:p-4 " >
-        <p className="my-1 mb-2">Select price range:</p>
+        <p className="my-1 mb-3">Select price range:</p>
             <div className="radio-container">       
              <label className="radio-label">
                 <input

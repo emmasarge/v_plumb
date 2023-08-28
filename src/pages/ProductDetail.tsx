@@ -77,7 +77,7 @@ export const ProductDetail = (props:any) => {
 
   return (
     <div className='flex w-full max-w-[1900px] justify-center items-center flex-col pt-24 pb-32'>
-      <div className='w-full flex pt-10 pb-16'>
+      <div className='w-full flex sm:pt-10 pb-5 sm:pb-16'>
        <ProductsOrganism
             productDetailPage={true}
             handleAddToCart={handleAddToCart}
@@ -90,7 +90,7 @@ export const ProductDetail = (props:any) => {
           />
           </div>
           <div className='w-11/12 flex flex-col lg:pt-5'> 
-          <h1 className="text-[1.55em] lg:text-[1.9em] font-[400] leading-[1.2em] mb-6 md:mb-12">Our customer recommend these toilets:</h1>
+          <h1 className="tracking-wider text-[1.25em] sm:text-[1.55em] lg:text-[1.9em] font-[400] leading-[1.2em] mb-6 md:mb-12">Our customer recommend these toilets:</h1>
       <RelatedProductsCarousel relatedProducts={relatedProducts} sortByHighestRating={true} />
     </div></div>
   );

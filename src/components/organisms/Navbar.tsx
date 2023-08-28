@@ -8,12 +8,17 @@ import { ReactComponent as BurgerMenu } from "../../assets/icons/burger_menu.svg
 export const Navbar = () => {
   const { cartItems } = useCart();
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+
   const handleMenu = () => {
     setMenuOpen(!menuOpen);
   };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
   return (
-    <nav className="w-full flex flex-row justify-around z-50 bg-white fixed shadow-sm ">
-      <div className="w-11/12 px-3 flex flex-row items-center justify-between">
+    <nav className="navbar w-full flex flex-row justify-around z-50 bg-white fixed shadow-sm ">
+      <div className="w-11/12  flex flex-row items-center justify-between">
         <div className="hidden  lg:flex">
           <Link
             className="text-[#71c16a] text-[1.2em] font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
@@ -23,28 +28,27 @@ export const Navbar = () => {
             Products
           </Link>
         </div>
-        <div onClick={handleMenu} className="flex w-8  z-[999] lg:hidden">
+        <div onClick={handleMenu} className="flex w-7 sm:w-8  z-[999] lg:hidden">
           <BurgerMenu />
         </div>
         {menuOpen && (
           <div
-            className={
-              "transition delay-150  duration-300 ease-in-out flex flex-col justify-center items-center w-3/4 mt-[3em] rounded-[1.125em] -ml-[1.5em] shadow-md h-screen bg-[#71c16a] fixed top-0 left-0 z-30"
-            }
-          >
+          id="menu"
+          className={`sm:hidden sm:mt-[2em] -ml-2 h-[50vh]  navbar-menu ${menuOpen ? "active" : "closing"}`}
+        >
             <div
-              onClick={() => setMenuOpen(!menuOpen)}
-              className="h-[80vh] w-8/12 pl-3  pt-5 flex-col flex justify-start items-start"
+             onClick={closeMenu}
+              className="h-[40vh] w-8/12 pl-5  pt-8 flex-col flex justify-start items-start"
             >
               <Link
-                className="text-white text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
+                className="text-white text-[1.2em] sm:text-[1.5em] font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
                 to="/"
                 aria-label="home"
               >
                 Home
               </Link>
               <Link
-                className="text-white mt-2 text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
+                className="text-white mt-2 text-[1.2em] sm:text-[1.5em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
                 to="/products"
                 aria-label="products"
               >
