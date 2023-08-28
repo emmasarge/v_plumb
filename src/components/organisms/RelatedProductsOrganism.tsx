@@ -55,11 +55,19 @@ export const RelatedProductsCarousel: React.FC<RelatedProductsCarouselProps> = (
           dots: true,
         },
       },
+      {
+        breakpoint: 380,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        },
+      },
     ],
   };
   return (
     <Slider {...settings}>  {slicedProducts.map((product) => (
-      <div   key={product.id}className='mb-5 sm:mb-16'>
+      <div   key={product.id}className='mb-8 sm:mb-16 pt-3 pb-6' >
       <ProductsOrganism
         productCarousel={true}
         key={product.id}
