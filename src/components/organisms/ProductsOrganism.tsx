@@ -68,11 +68,11 @@ export const ProductsOrganism = (props: ProductProps) => {
             <h1 className="text-[0.85em] leading-[1.2em]  tracking-wide" >{props.product_name}</h1>
             <p className="mt-2 text-[0.85em] leading-[1.2em]">Price: £{props.product_price}</p> 
           </div>
-          <div className="font-[300] flex items-start justify-start text-[0.75em] leading-[1.2em] mt-1 mb-3 h-[0.2em]">
+          <div className="font-[300] flex items-start justify-start text-[0.75em] leading-[1.2em] sm:mt-1 mb-3 h-[0.2em]">
             
             {props.average_rating < 1 || props.average_rating === undefined
               ? <p>Not rated yet</p>
-              : <div className="flex w-9/12"> <RatingStars height={'h-[1.65em]'} rating={props.average_rating}/></div>}
+              : <div className="flex w-9/12"> <RatingStars height={'h-[1.85em]'} rating={props.average_rating}/></div>}
           </div>
         </div>
       </Link>:
