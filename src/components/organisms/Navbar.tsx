@@ -29,22 +29,22 @@ export const Navbar = () => {
         {menuOpen && (
           <div
             className={
-              "transition delay-150 duration-300 ease-in-out flex flex-col justify-center items-center w-1/2 shadow-md h-screen bg-white fixed top-0 left-0 z-30"
+              "transition delay-150  duration-300 ease-in-out flex flex-col justify-center items-center w-3/4 mt-[3em] rounded-[1.125em] -ml-[1.5em] shadow-md h-screen bg-[#71c16a] fixed top-0 left-0 z-30"
             }
           >
             <div
               onClick={() => setMenuOpen(!menuOpen)}
-              className="h-[80vh] w-8/12 pt-5 flex-col flex justify-start items-start"
+              className="h-[80vh] w-8/12 pl-3  pt-5 flex-col flex justify-start items-start"
             >
               <Link
-                className="text-[#71c16a] text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
+                className="text-white text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
                 to="/"
                 aria-label="home"
               >
                 Home
               </Link>
               <Link
-                className="text-[#71c16a] mt-2 text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
+                className="text-white mt-2 text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
                 to="/products"
                 aria-label="products"
               >

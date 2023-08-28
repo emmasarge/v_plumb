@@ -81,15 +81,15 @@ export const Home = () => {
       <div className="bg-hero-image bg-blend-multiply bg-slate-400 bg-cover w-full justify-center items-end h-[80vh] md:h-[90vh] flex pb-4">
         <div className="w-11/12 flex pb-8">
           <div className="w-full md:w-9/12 flex flex-col pb-16">
-            <h1 className="text-white font-[600] leading-[1.125em] tracking-wide text-[2.35em] sm:text-[2.75em] lg:text-[4em]">
+            <h1 className="text-white font-[600] leading-[1.125em] tracking-wide text-[2.125em] sm:text-[2.75em] lg:text-[4em]">
               Our biggest collection of toilets is here.
             </h1>
-            <h2 className=" w-11/12 text-white mt-1 text-[1.95em] sm:text-[2.125em] tracking-wide  lg:text-[3em] leading-[1.124em]">
+            <h2 className=" sm:w-11/12 text-white mt-1 text-[1.65em] sm:text-[2.125em] tracking-wide  lg:text-[3em] leading-[1.124em]">
               Classic porcelein, modern plumbing
             </h2>
             <div className=" mt-8 border-[1.5px] border-white cursor-pointer py-1 hover:bg-white transition duration-300 hover:duration-300 rounded-full max-w-[200px] items-center justify-center flex">
               <Link
-                className="text-white text-[1.5em] sm:text-[1.75em] hover:text-black  transition duration-300 hover:duration-300"
+                className="text-white text-[1.3em] sm:text-[1.75em] hover:text-black  transition duration-300 hover:duration-300"
                 to="/products"
               >
                 Shop now

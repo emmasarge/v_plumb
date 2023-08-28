@@ -81,7 +81,7 @@ export const Products = () => {
 
   return (
     <div className="w-full flex flex-col flex-wrap justify-center  pt-28 pb-32">
-      <div className="w-11/12  pl-10 mx-auto pt-20">
+      <div className="w-11/12  pb-10 mx-auto pt-20">
         <div className="pb-7">
           <h1 className="text-[2.4em] mb-8 font-[500] leading-[1.2em]">
             Our products.
