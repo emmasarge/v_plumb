@@ -55,7 +55,7 @@ export const ProductsOrganism = (props: ProductProps) => {
             </div>
           </div>
         : props.productCarousel ?
-         <Link onClick={()=>analytics_clickOnProduct(props.product_name, props.product_id)} className=" w-11/12 flex justify-around h-full "to={`/product/${props.product_id}`}>
+         <Link aria-label={props.product_name} onClick={()=>analytics_clickOnProduct(props.product_name, props.product_id)} className=" w-11/12 flex justify-around h-full "to={`/product/${props.product_id}`}>
         <div className="w-11/12 justify-around items-start h-full flex flex-col">
           <div className=" flex justify-center  object-cover items-center w-full max-w-[15em] sm:w-11/12  mt-2 ">
             <img
@@ -76,7 +76,7 @@ export const ProductsOrganism = (props: ProductProps) => {
           </div>
         </div>
       </Link>:
-        <Link onClick={()=>analytics_clickOnProduct(props.product_name, props.product_id)} className=" w-full flex justify-center "to={`/product/${props.product_id}`}>
+        <Link aria-label={props.product_name} onClick={()=>analytics_clickOnProduct(props.product_name, props.product_id)} className=" w-full flex justify-center "to={`/product/${props.product_id}`}>
           <div className="w-11/12 max-w-[330px] py-2 justify-center items-center flex flex-col">
             <div className=" flex justify-center  object-cover items-center w-full max-w-[17em] sm:w-11/12  mt-2 ">
               <img

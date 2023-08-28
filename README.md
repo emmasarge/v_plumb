@@ -1,6 +1,16 @@
 # Emma Sargeant 
 
+## Structure of the app
 
+This mimics an e-commerce site using an api to exhibit the ability to filter and sort products, demonstrate responsive design for mobile and desktop users. There is an interative cart which indicates how many items you have in the basket. Google events have been added for click events like when an item is clicked on to go to the product page and when an item is added to cart, to demonstrate user behaviour tracking for future design optimisaiton.
+
+
+### The production site
+
+The site was deployed to Netlify.
+
+You can view the production site here:
+[Visit Victorian Plumbing Web App](https://main--bespoke-faloodeh-f984be.netlify.app)
 ### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -47,3 +57,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+

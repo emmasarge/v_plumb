@@ -18,6 +18,7 @@ export const Navbar = () => {
           <Link
             className="text-[#71c16a] text-[1.2em] font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
             to="/products"
+            aria-label="products"
           >
             Products
           </Link>
@@ -28,7 +29,7 @@ export const Navbar = () => {
         {menuOpen && (
           <div
             className={
-              "transition delay-150 duration-300 ease-in-out translate-x-6  flex flex-col justify-center items-center w-1/2 shadow-md h-screen bg-white fixed top-0 left-0 z-30"
+              "transition delay-150 duration-300 ease-in-out flex flex-col justify-center items-center w-1/2 shadow-md h-screen bg-white fixed top-0 left-0 z-30"
             }
           >
             <div
@@ -38,12 +39,14 @@ export const Navbar = () => {
               <Link
                 className="text-[#71c16a] text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
                 to="/"
+                aria-label="home"
               >
                 Home
               </Link>
               <Link
                 className="text-[#71c16a] mt-2 text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
                 to="/products"
+                aria-label="products"
               >
                 Products
               </Link>
@@ -52,7 +55,7 @@ export const Navbar = () => {
         )}
 
         <div>
-          <Link className="font-bold" to="/">
+          <Link className="font-bold" to="/ "aria-label="home">
             <div className="flex h-[3em] md:h-[5em]">
               <img height={"1em"} src={VPLogo} alt="Victorian Plumbing" />
             </div>
