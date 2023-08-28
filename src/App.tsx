@@ -29,6 +29,7 @@ export default function App() {
             </Route>
           </Routes>
         </Router>
+      
         </CartProvider>
       </div>
     </>
