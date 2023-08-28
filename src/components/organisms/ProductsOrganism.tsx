@@ -43,7 +43,7 @@ export const ProductsOrganism = (props: ProductProps) => {
                <p className="mt-3 mb-2 w-11/12 text-[1em] md:text-[1.2em]">Average customer rating: {""}</p> 
                 {props.average_rating < 1 || props.average_rating === undefined
                   ? <p>Not rated yet</p>
-                  :<div className="w-9/12 flex"> <RatingStars height="h-[1.25em]"  rating={props.average_rating}/></div>}
+                  :<div className="max-w-[160px] w-5/12 flex"> <RatingStars height=" h-[1em] sm:h-[1.25em]"  rating={props.average_rating}/></div>}
               </div>
               <p className="mt-8 text-[1.125em] md:text-[1.25em] leading-[1.2em]  font-[400]">Price: £{props.product_price}</p>
 
@@ -72,7 +72,7 @@ export const ProductsOrganism = (props: ProductProps) => {
             
             {props.average_rating < 1 || props.average_rating === undefined
               ? <p>Not rated yet</p>
-              : <div > <RatingStars height="h-[1em]" rating={props.average_rating}/></div>}
+              : <div className="flex w-9/12"> <RatingStars height={'h-[1.65em]'} rating={props.average_rating}/></div>}
           </div>
         </div>
       </Link>:
@@ -92,7 +92,7 @@ export const ProductsOrganism = (props: ProductProps) => {
               <p className="mb-1.5">  Average customer rating: {""}</p>
                 {props.average_rating < 1 || props.average_rating === undefined
                   ? <p className="italic font-[200]">Not rated yet</p>
-                  :  <RatingStars rating={props.average_rating}/>}
+                  : <div className="w-8/12  mt-4"> <RatingStars height={'h-[1.3em]'} rating={props.average_rating}/></div>}
               </div>
          
             </div>
