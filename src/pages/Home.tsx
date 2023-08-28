@@ -78,7 +78,7 @@ export const Home = () => {
 
   return (
     <div className="w-full max-w-[1900px] flex flex-col flex-wrap justify-center pt-10 pb-32">
-      <div className="bg-hero-image bg-blend-multiply bg-slate-400 bg-cover w-full justify-center items-end h-[90vh] flex pb-4">
+      <div className="bg-hero-image bg-blend-multiply bg-slate-400 bg-cover w-full justify-center items-end h-[80vh] md:h-[90vh] flex pb-4">
         <div className="w-11/12 flex pb-8">
           <div className="w-full md:w-9/12 flex flex-col pb-16">
             <h1 className="text-white font-[600] leading-[1.125em] tracking-wide text-[2.35em] sm:text-[2.75em] lg:text-[4em]">
