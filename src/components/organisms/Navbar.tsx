@@ -33,10 +33,16 @@ export const Navbar = () => {
           >
             <div
               onClick={() => setMenuOpen(!menuOpen)}
-              className="h-[80vh] w-8/12 pt-5 flex justify-start items-start"
+              className="h-[80vh] w-8/12 pt-5 flex-col flex justify-start items-start"
             >
               <Link
-                className="text-[#71c16a] text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-3 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
+                className="text-[#71c16a] text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
+                to="/"
+              >
+                Home
+              </Link>
+              <Link
+                className="text-[#71c16a] mt-2 text-[1.2em]  font-medium uppercase tracking-wide hover:underline hover:underline-offset-4 transition duration-300 hover:duration-300 hover:scale-105 cursor-pointer"
                 to="/products"
               >
                 Products
