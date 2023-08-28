@@ -85,7 +85,7 @@ export const ProductsOrganism = (props: ProductProps) => {
                 alt={props.product_alt_text}
               />
             </div>
-            <div className="mt-2 pb-4 flex w-full sm:w-10/12 justify-start items-start flex-col">
+            <div className="mt-2 pb-4 flex w-11/12 px-2 sm:w-10/12 justify-start items-start flex-col">
               <h1 className="text-[1em] leading-[1.2em] font-[500] tracking-wide" >{props.product_name}</h1>
               <p className="mt-2 text-[0.95em] tracking-wide leading-[1.2em]">Price: £{props.product_price}</p> 
               <div className="font-[300] text-[0.85em] mt-2 leading-[1.2em]">
